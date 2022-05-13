@@ -48,9 +48,11 @@
 
 // export default App;
 
-import logo from "./logo.svg";
+import todd from "/Users/bkelly/code/keypad/src/todd.png";
 import { useState } from "react";
 import "./App.css";
+
+
 
 function App() {
   const checkCode = () => {
@@ -70,14 +72,17 @@ function App() {
     <div className="App">
       <header className="app-header">
         <div class="wrapper">
+        
           <h3 class="display" id="display">
             {!display ? "READY" : display}
           </h3>
+         
           <button onClick={() => setDisplay(display + "1")}>1</button>
           <button onClick={() => setDisplay(display + "2")}>2</button>
           <button onClick={() => setDisplay(display + "3")}>3</button>
           <br></br>
         </div>
+        
         <button onClick={() => setDisplay(display + "4")}>4</button>
         <button onClick={() => setDisplay(display + "5")}>5</button>
         <button onClick={() => setDisplay(display + "6")}>6</button>
@@ -92,6 +97,12 @@ function App() {
         <button onClick={() => setDisplay(display + "0")}>0</button>
         <button onClick={checkCode}>E</button>
       </header>
+
+      <div>
+     
+    </div>
+
+      
     </div>
   );
 }
