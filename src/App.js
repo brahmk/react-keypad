@@ -1,52 +1,4 @@
-// import logo from './logo.svg';
-// import { useState } from 'react';
-// import './App.css';
 
-// function App() {
-
-//   const validCode = () =>{
-//     document.getElementById('img').style.display = "block";
-//   }
-
-//  const checkCode = (display) => {
-//    console.log(display);
-//    if (display ==='4112'){
-//     setDisplay('ENTER')
-//     validCode();
-//     } else { setDisplay('INVALID')}
-//  }
-
-//   const [display, setDisplay] = useState(' ')
-//   return (
-//     <div className="App">
-
-//       <main>
-
-//       <h3 class="display">{display}</h3>
-//       <button onClick={()=>setDisplay(display +'1')}>1</button>
-//       <button onClick={()=>setDisplay(display +'2')}>2</button>
-//       <button onClick={()=>setDisplay(display +'3')}>3</button>
-//       <br></br>
-//       <button onClick={()=>setDisplay(display +'4')}>4</button>
-//       <button onClick={()=>setDisplay(display +'5')}>5</button>
-//       <button onClick={()=>setDisplay(display +'6')}>6</button>
-//       <br></br>
-//       <button onClick={()=>setDisplay(display +'7')}>7</button>
-//       <button onClick={()=>setDisplay(display +'8')}>8</button>
-//       <button onClick={()=>setDisplay(display +'9')}>9</button>
-//       <br></br>
-//       <button onClick={()=>setDisplay('')}>C</button>
-//       <button onClick={()=>setDisplay(display +'0')}>0</button>
-//       <button onClick={checkCode}>E</button>
-//       </main>
-//       <img id='todd' src='/todd.png'></img>
-
-//     </div>
-
-//   );
-// }
-
-// export default App;
 
 import todd from "/Users/bkelly/code/keypad/src/todd.png";
 import { useState } from "react";
@@ -60,6 +12,8 @@ function App() {
     if (display == "4112") {
       setDisplay("ENTER");
       document.getElementById("display").style.color = "green";
+      document.getElementById("todd").style.display = "block";
+      
     } else {
       setDisplay("INVALID");
       document.getElementById("display").style.color = "red";
@@ -76,7 +30,7 @@ function App() {
           <h3 class="display" id="display">
             {!display ? "READY" : display}
           </h3>
-         
+         <img id="todd" src={todd}></img>
           <button onClick={() => setDisplay(display + "1")}>1</button>
           <button onClick={() => setDisplay(display + "2")}>2</button>
           <button onClick={() => setDisplay(display + "3")}>3</button>

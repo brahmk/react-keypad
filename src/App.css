@@ -12,16 +12,21 @@
 }
 
 #todd{
-  display: block;
+  display:none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   background-image: src('./todd.png');
+  z-index: -5;
   height:20%;
   width:20%;
-  animation: App-logo-spin cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: App-logo-spin infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  position: relative;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-  
+  #todd {
+    animation: App-logo-spin infinite 4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 }
 
@@ -54,6 +59,7 @@
 button{
   font-size: 20px;
   border-radius: 6px;
+  z-index: 100;
 }
 @font-face {
   font-family: digital;
@@ -82,3 +88,4 @@ main {
   border-radius: 15px;
   padding-bottom: 20px;
 }
+
