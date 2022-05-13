@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -35,4 +36,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+button{
+  font-size: 20px;
+  border-radius: 6px;
+}
+@font-face {
+  font-family: digital;
+  src: url(./digital-7.ttf);
+}
+
+.display{
+  background-color: rgb(204, 197, 205);
+  border: 300px;
+  border-radius: 5px;
+  border-color: dimgrey;
+  font-family:digital;
+}
+
+main {
+  
+
+  max-width: 100px;
+  max-height: 800px;
+  background-color: dimgrey;
+  border: #000;
+  border-radius: 15px;
+  padding-bottom: 20px;
 }
